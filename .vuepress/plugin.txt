@@ -1,0 +1,13 @@
+    oml2dPlugin({
+      // 在这里配置选项
+      models: [
+        {
+          path: 'https://cdn.jsdelivr.net/gh/Eikanya/Live2d-model/Live2D/Senko_Normals/senko.model3.json',
+          scale: 0.12,
+          position: [-10, 50],
+          stageStyle: {
+            width: 350
+          }
+        }
+      ]
+    })
