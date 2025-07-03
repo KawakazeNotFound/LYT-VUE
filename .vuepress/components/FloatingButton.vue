@@ -1,22 +1,19 @@
 <!-- docs/.vuepress/components/FloatingButton.vue -->
 <template>
-  <div v-if="route.path === '/'" class="floating-btn" @click="handleClick">
+  <div class="floating-btn" @click="handleClick">
     <img src="/logo.jpg" alt="DeepSeek" />
+    <div class="tooltip">Hi~ 我是苏小坡，有问题尽管问我</div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { useRoute } from 'vue-router'
-
 export default defineComponent({
   name: 'FloatingButton',
-  setup() {
-    const route = useRoute()
-    const handleClick = () => {
+  methods: {
+    handleClick() {
       window.location.href = 'https://doubao.com/bot/qJ7VwfB6'
     }
-    return { route, handleClick }
   }
 })
 </script>
@@ -44,6 +41,39 @@ export default defineComponent({
 
 .floating-btn:hover img {
   transform: scale(1.05);
-  transition: transform 0.2s;
+  transition: transform .2s;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 110%; /* 上方显示 */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+/* 箭头 */
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
+}
+
+/* 悬停时显示 */
+.floating-btn:hover .tooltip {
+  opacity: 1;
 }
 </style>
