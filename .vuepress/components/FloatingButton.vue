@@ -2,7 +2,7 @@
 <template>
   <div class="floating-btn" @click="handleClick">
     <img src="/logo.jpg" alt="DeepSeek" />
-    <div class="tooltip">Hi~ 我是苏小坡，有问题尽管问我</div>
+    <div class="tooltip">Hi～我是你的体验向导苏小坡，接下来由我带领你来沉浸体验吧！</div>
   </div>
 </template>
 
