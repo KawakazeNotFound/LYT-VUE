@@ -14,7 +14,7 @@ export default defineComponent({
   setup() {
     const route = useRoute()
     const handleClick = () => {
-      window.location.href = 'https://chat.deepseek.com'
+      window.location.href = 'https://doubao.com/bot/qJ7VwfB6'
     }
     return { route, handleClick }
   }

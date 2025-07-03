@@ -130,12 +130,8 @@ export default defineUserConfig({
       { text: "首页", link: "/" },
       { text: "剧本杀 ", link: "/docs/jubensha/init" },
       { text: "诗词大会 ", link: "/docs/wenda/init" },
-      { text: "线上音乐会 ", link: "https://www.xiaohongshu.com/user/profile/676fc1bc000000001801d8fc?xsec_token=YBnzO1O22FtOqep4vaa9gwHqCEAcmYEKvtrhkftTOMpUU=&xsec_source=app_share&xhsshare=CopyLink&appuid=60b76cd400000000010044a6&apptime=1751299720&share_id=29f555f4d2a740239f518713c331c3f0" },
-      { text: "目录",
-        children: [
-          { text: "活动目录", link: "/docs/theme-reco/background" },
-        ],
-      },
+      { text: "线上音乐会 ", link: "https://www.xiaohongshu.com/user/profile/676fc1bc000000001801d8fc" },
+      
     ],
     bulletin: {
 //原本的AI栏目
